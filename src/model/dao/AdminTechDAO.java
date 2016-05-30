@@ -14,10 +14,7 @@ import model.beans.AdminTech;
  * @author knud
  */
 public class AdminTechDAO extends DAO<AdminTech> {
-
-    public AdminTechDAO() {
-    }
-
+    
     @Override
     public AdminTech find(int id_admintech) {
         AdminTech a = null;
@@ -35,7 +32,6 @@ public class AdminTechDAO extends DAO<AdminTech> {
         }
         return a;
     }
-
     @Override
     public List<AdminTech> findAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
